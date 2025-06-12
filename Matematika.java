@@ -38,25 +38,25 @@ public class Matematika {
     }
 
     // Kelas MatematikaBeraksi yang berisi method main
-    public static class MatematikaBeraksi {
+    static class MatematikaBeraksi {
         public static void main(String[] args) {
-            // Membuat objek Matematika dan menginisialisasi bil1 dan bil2
-            Matematika matematika = new Matematika(10.5, 5.5);
+            // Membuat objek Matematika dan menginisialisasi dengan dua digit terakhir NPM (10 dan 10)
+            Matematika aldi = new Matematika(10, 10);
 
-            // Menghitung dan menampilkan hasil penjumlahan
-            double hasilPenjumlahan = matematika.setPenjumlahan();
+            // Menampilkan hasil penjumlahan
+            double hasilPenjumlahan = aldi.setPenjumlahan();
             System.out.println("Hasil Penjumlahan: " + hasilPenjumlahan);
 
-            // Menghitung dan menampilkan hasil pengurangan
-            double hasilPengurangan = matematika.setPengurangan();
+            // Menampilkan hasil pengurangan
+            double hasilPengurangan = aldi.setPengurangan();
             System.out.println("Hasil Pengurangan: " + hasilPengurangan);
 
-            // Menghitung dan menampilkan hasil perkalian
-            double hasilPerkalian = matematika.setPerkalian();
+            // Menampilkan hasil perkalian
+            double hasilPerkalian = aldi.setPerkalian();
             System.out.println("Hasil Perkalian: " + hasilPerkalian);
 
-            // Menghitung dan menampilkan hasil pembagian
-            double hasilPembagian = matematika.setPembagian();
+            // Menampilkan hasil pembagian
+            double hasilPembagian = aldi.setPembagian();
             System.out.println("Hasil Pembagian: " + hasilPembagian);
         }
     }
