@@ -26,4 +26,25 @@ public class Matematika {
             return 0;
         }
     }
+
+    // Kelas MatematikaBeraksi yang berisi method main
+    public static class MatematikaBeraksi {
+        public static void main(String[] args) {
+            // Membuat objek Matematika
+            Matematika matematika = new Matematika();
+
+            // Menghitung dan menampilkan hasil operasi
+            int tambahHasil = matematika.tambah(10, 5);
+            System.out.println("Hasil Penjumlahan: " + tambahHasil);
+
+            int kurangHasil = matematika.kurang(10, 5);
+            System.out.println("Hasil Pengurangan: " + kurangHasil);
+
+            int kaliHasil = matematika.kali(10, 5);
+            System.out.println("Hasil Perkalian: " + kaliHasil);
+
+            double bagiHasil = matematika.bagi(10, 5);
+            System.out.println("Hasil Pembagian: " + bagiHasil);
+        }
+    }
 }
